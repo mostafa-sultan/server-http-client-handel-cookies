@@ -14,7 +14,7 @@ exports.sendRequest = async (method, url, headers, body) => {
     try {
       cookiesStore = res.headers['set-cookie'].toString() + cookiesStore;
     } catch (e) { }
-    return config
+    return res.data
   } else {
     return "";
   }
